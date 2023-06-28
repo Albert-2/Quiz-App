@@ -105,7 +105,7 @@ start.addEventListener("click", function () {
   }
 });
 
-let seconds = 5;
+let seconds = 10;
 function Timer() {
   let interval;
 
@@ -124,7 +124,7 @@ function Timer() {
 
   function reset() {
     clearInterval(interval);
-    seconds = 5;
+    seconds = 10;
     document.querySelector(".timer").textContent = seconds;
   }
 
@@ -135,8 +135,6 @@ function Timer() {
 }
 
 let timer = Timer();
-
-// window.addEventListener("DOMContentLoaded", displayQues);
 
 function displayQues() {
   if (count < data.length) {
@@ -189,5 +187,20 @@ function displayQues() {
       timer.reset();
     });
   } else {
+    timer.reset();
+    document.body.classList.add("bodyBack");
+    wrapper.classList.remove("hidden");
+    document.querySelector(".demo").innerHTML = `
+        <h1 class="text-6xl">Thanks For playing...!!</h1>
+        <p class="font-semibold text-3xl endScore">Your Score : </p>
+        <button
+          type="submit"
+          class="replay border-2 border-white px-10 py-2 text-2xl"
+        >Replay</button>`;
+    let endScore = document.querySelector(".endScore");
+    endScore.textContent = "Your Score : " + scoreSeconds;
+    document.querySelector(".replay").addEventListener("click", function () {
+      window.location.reload();
+    });
   }
 }
