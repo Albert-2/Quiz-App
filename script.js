@@ -139,7 +139,6 @@ let timer = Timer();
 function displayQues() {
   if (count < data.length) {
     let demo = data.slice(count, count + 1);
-    console.log(count);
     let temp = demo.map(function (item) {
       return `<div class="question w-[90%] text-center">
             <h3
@@ -156,7 +155,6 @@ function displayQues() {
     let options = document.querySelectorAll(".option");
     options.forEach((ans, index) => {
       ans.addEventListener("click", function (e) {
-        console.log(demo);
         if (index === demo[0].correctAnswerIndex) {
           ans.classList.add("correct");
         } else {
