@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="input.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Quize App - Home</title>
+  </head>
+  <body class="bodyBack">
+    <div class="wrapper">
+      <div
+        class="demo text-white z-30 text-center flex flex-col items-center justify-center gap-10"
+        style="position: absolute; top: 40%; width: 100vw"
+      >
+        <h1 class="text-6xl">Enter Your Username :</h1>
+        <input
+          type="text"
+          class="name border-2 text-xl border-white bg-transparent p-3 outline-none"
+        />
+        <button
+          type="submit"
+          class="start border-2 border-white px-10 py-2 text-2xl"
+        >
+          Start
+        </button>
+      </div>
+    </div>
+    <div
+      class="main w-[100vw] h-[100vh] flex justify-center text-white relative"
+      style="background: url(maxresdefault.jpg) center/cover no-repeat fixed"
+    >
+      <div class="questionContainer w-[100%] flex flex-col">
+        <div class="flex-1 relative">
+          <span
+            class="timer border-2 rounded-[50%] p-7 absolute bottom-5 left-20 font-bold text-2xl"
+            >10</span
+          >
+        </div>
+        <div
+          class="questionMain flex-1 flex items-center justify-center flex-col"
+        ></div>
+      </div>
+      <div
+        class="userProfile text-xl border-2 border-[#d37e07] bg-gradient-to-b from-[#02023c] to-[#030365] absolute right-5 top-5 h-fit p-5 sm:w-[300px] w-[60%] flex flex-col justify-center gap-5"
+      >
+        <div class="profile font-semibold text-2xl" id="profile">
+          <i class="fa-regular fa-user fa-2xl" style="color: #ffffff"></i>
+          user:
+        </div>
+        <p class="totalScore font-semibold">Score:</p>
+        <p class="rightScore font-semibold">Correct:</p>
+        <p class="wrongScore font-semibold">Wrong:</p>
+        <p class="totalQuestion font-semibold">Total Ques:10</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

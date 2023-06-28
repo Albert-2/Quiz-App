@@ -1,0 +1,96 @@
+[
+  {
+    "id": "622a1c3c7cc59eab6f951a41",
+    "correctAnswer": "Ghana",
+    "options": ["India", "Australia", "Egypt", "Ghana"],
+    "question": "The Gold Coast gained its independence from Great Britain in 1957 and formed part of which new country?"
+  },
+  {
+    "id": "622a1c347cc59eab6f94f947",
+    "category": "film_and_tv",
+    "correctAnswer": "Pirates of the Caribbean",
+    "options": [
+      "The Godfather",
+      "Pirates of the Caribbean",
+      "The Silence of the Lambs",
+      "The Birds"
+    ],
+    "question": "Which film contains the character 'Captain Jack Sparrow'?"
+  },
+  {
+    "category": "science",
+    "id": "6461407d4d46e537ca8cd9d7",
+    "correctAnswer": "Magnetron",
+    "incorrectAnswers": ["Resistor", "Magnetron", "Diode", "Transistor"],
+    "question": "What kind of electronic tube is used to produce microwaves?"
+  },
+  {
+    "category": "arts_and_literature",
+    "id": "622a1c3a7cc59eab6f95135a",
+    "correctAnswer": "Baroque",
+    "incorrectAnswers": ["Classical", "Renaissance", "Baroque", "Gothic"],
+    "question": "Which 17th and early 18th century movement in painting is characterized by great drama, deep colour, intense light and dark shadows?"
+  },
+  {
+    "category": "history",
+    "id": "62611fc34b176d54800e3d6f",
+    "correctAnswer": "1971",
+    "incorrectAnswers": ["1971", "1957", "1964", "1978"],
+    "question": "When was the first email sent?"
+  },
+  {
+    "category": "society_and_culture",
+    "id": "6293ebc77f41d6338b96eebf",
+    "correctAnswer": "Christopher Columbus",
+    "incorrectAnswers": [
+      "Napoleon Bonaparte",
+      "Martin Luther",
+      "Marco Polo",
+      "Christopher Columbus"
+    ],
+    "question": "Which of these people was an Italian explorer who landed in America?"
+  },
+  {
+    "category": "geography",
+    "id": "6237403bcb85f7ce9e949ce9",
+    "correctAnswer": "Dominica",
+    "incorrectAnswers": [
+      "Romania",
+      "Sierra Leone",
+      "Antigua and Barbuda",
+      "Dominica"
+    ],
+    "question": "Roseau is the capital city of which country?"
+  },
+  {
+    "category": "arts_and_literature",
+    "id": "622a1c347cc59eab6f94f95b",
+    "correctAnswer": "Post Office",
+    "incorrectAnswers": [
+      "Tinker",
+      "My Life As a Man",
+      "Post Office",
+      "Nine Stories"
+    ],
+    "question": "Which book contains the character 'Henry Chinaski'?"
+  },
+  {
+    "category": "arts_and_literature",
+    "id": "622a1c397cc59eab6f950e7e",
+    "correctAnswer": "Voltaire",
+    "incorrectAnswers": [
+      "Voltaire",
+      "Stendhal",
+      "Paulo Coelho",
+      "Isabel Allende"
+    ],
+    "question": "Which author wrote 'Candide'?"
+  },
+  {
+    "category": "music",
+    "id": "622a1c397cc59eab6f950c7e",
+    "correctAnswer": "U2",
+    "incorrectAnswers": ["Public Image Ltd.", "U2", "The Script", "The Cure"],
+    "question": "Which Irish rock band released the studio album 'All That You Can't Leave Behind'?"
+  }
+]

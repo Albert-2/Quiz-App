@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer {
+  .optionsStyle {
+    @apply m-auto my-2 rounded-2xl w-[48%] py-5 font-semibold text-xl bg-gradient-to-b from-[#02023c] to-[#030365] cursor-pointer;
+  }
+  .priceStyle {
+    @apply flex-1  w-[90%] m-auto my-2 text-center rounded-2xl cursor-pointer font-bold text-xl flex items-center justify-center  bg-gradient-to-b from-[#02023c] to-[#030365];
+  }
+  .bodyBack::after {
+    content: "";
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    background-color: #01013b;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .correct {
+    @apply animate-[correct_2s_ease_forwards];
+  }
+  @keyframes correct {
+    0%,
+    21% {
+      background: rgb(4, 4, 156);
+    }
+    10%,
+    30% {
+      background: none;
+    }
+    31%,
+    100% {
+      background: green;
+    }
+  }
+  .wrong {
+    @apply animate-[wrong_2s_ease_forwards];
+  }
+  @keyframes wrong {
+    0%,
+    21% {
+      background: rgb(4, 4, 156);
+    }
+    10%,
+    30% {
+      background: none;
+    }
+    31%,
+    100% {
+      background: red;
+    }
+  }
+}
