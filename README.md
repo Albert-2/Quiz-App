@@ -5,7 +5,7 @@ The app will track your score means if your answer is right or wrong and if it i
 
 ## Demo
 
-If you want to see how it look like here is the demo
+If you want to see how it look like here is the <a href="https://albert-2.github.io/Quiz-App/"> demo</a>
 
 ## Screenshots
 
