@@ -91,10 +91,11 @@ let wrapper = document.querySelector(".wrapper");
 let total = document.querySelector(".totalScore");
 let right = document.querySelector(".rightScore");
 let wrong = document.querySelector(".wrongScore");
-let count = 0;
-let rigthCount = 0;
-let wrongCount = 0;
-let scoreSeconds = 0;
+let count = 0,
+  rigthCount = 0,
+  wrongCount = 0,
+  scoreSeconds = 0,
+  seconds = 10;
 start.addEventListener("click", function () {
   if (userName.value && isNaN(userName.value - 0)) {
     document.body.classList.remove("bodyBack");
@@ -105,7 +106,6 @@ start.addEventListener("click", function () {
   }
 });
 
-let seconds = 10;
 function Timer() {
   let interval;
 
@@ -142,7 +142,7 @@ function displayQues() {
     let temp = demo.map(function (item) {
       return `<div class="question w-[90%] text-center">
             <h3
-              class="font-semibold text-2xl p-5 m-5 rounded-2xl border-2 border-[#d37e07] bg-gradient-to-b from-[#02023c] to-[#030365]">${item.question}</h3>
+              class="font-semibold sm:text-2xl text-lg sm:p-5 p-2 break-words m-5 rounded-2xl border-2 border-[#d37e07] bg-gradient-to-b from-[#02023c] to-[#030365]">${item.question}</h3>
           </div>
           <div class="options w-[90%] text-center flex flex-wrap">
             <div class="option optionsStyle border-2 border-[#d37e07]">A.${item.options[0]}</div>

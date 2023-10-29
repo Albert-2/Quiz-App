@@ -554,6 +554,10 @@ video {
   right: 1.25rem;
 }
 
+.top-2 {
+  top: 0.5rem;
+}
+
 .top-5 {
   top: 1.25rem;
 }
@@ -616,16 +620,17 @@ video {
   width: 48%;
 }
 
-.w-\[60\%\] {
-  width: 60%;
-}
-
 .w-\[75px\] {
   width: 75px;
 }
 
 .w-\[90\%\] {
   width: 90%;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .flex-1 {
@@ -676,8 +681,20 @@ video {
   gap: 2.5rem;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .gap-5 {
   gap: 1.25rem;
+}
+
+.text-clip {
+  text-overflow: clip;
+}
+
+.break-words {
+  overflow-wrap: break-word;
 }
 
 .rounded-2xl {
@@ -688,12 +705,12 @@ video {
   border-radius: 50%;
 }
 
-.border-2 {
-  border-width: 2px;
-}
-
 .border {
   border-width: 1px;
+}
+
+.border-2 {
+  border-width: 2px;
 }
 
 .border-\[\#d37e07\] {
@@ -729,6 +746,10 @@ video {
   --tw-gradient-to: #030365 var(--tw-gradient-to-position);
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
 .p-3 {
   padding: 0.75rem;
 }
@@ -742,9 +763,19 @@ video {
   padding-right: 2.5rem;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .py-5 {
@@ -769,6 +800,11 @@ video {
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .text-xl {
@@ -809,17 +845,28 @@ video {
     margin-bottom: 0.5rem;
     width: 48%;
     cursor: pointer;
+    text-overflow: clip;
+    overflow-wrap: break-word;
     border-radius: 1rem;
     background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
     --tw-gradient-from: #02023c var(--tw-gradient-from-position);
     --tw-gradient-to: rgb(2 2 60 / 0) var(--tw-gradient-to-position);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
     --tw-gradient-to: #030365 var(--tw-gradient-to-position);
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-    font-size: 1.25rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    font-size: 1.125rem;
     line-height: 1.75rem;
     font-weight: 600;
+  }
+
+  @media (min-width: 640px) {
+    .optionsStyle {
+      padding-top: 1.25rem;
+      padding-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+    }
   }
 
   .priceStyle {
@@ -899,7 +946,22 @@ video {
 }
 
 @media (min-width: 640px) {
-  .sm\:w-\[300px\] {
-    width: 300px;
+  .sm\:p-5 {
+    padding: 1.25rem;
+  }
+
+  .sm\:py-5 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .sm\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
